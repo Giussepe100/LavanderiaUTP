@@ -1,0 +1,157 @@
+@charset "ISO-8859-1";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+/*Título*/
+
+.titulo{
+	position: relative;
+	text-align: center;
+	color: white;
+	
+}
+
+
+/*Barra de menu*/
+nav{
+	margin: 27px auto 0;
+	position: relative;
+	width: 590px;
+	height: 50px;
+	background-color:#FF0000;
+	border-radius: 8px;
+	font-size: 0;
+}
+nav a{
+	line-height: 50px;
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+}
+nav .animation{
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	transition: all .5s ease 0s;
+	border-radius: 8px;
+}
+a:nth-child(1){
+	width: 100px;
+}
+a:nth-child(2){
+	width: 110px;
+}
+a:nth-child(3){
+	width: 100px;
+}
+a:nth-child(4){
+	width: 160px;
+}
+a:nth-child(5){
+	width: 120px;
+}
+nav .start-home, a:nth-child(1):hover~.animation{
+	width: 110px;
+	left: 0;
+	background-color: #c71585;
+}
+nav .start-nosotros, a:nth-child(2):hover~.animation{
+	width: 110px;
+	left: 100px;
+	background-color: #e74c3c;
+}
+nav .start-servicios, a:nth-child(3):hover~.animation{
+	width: 100px;
+	left: 210px;
+	background-color: #3498db;
+}
+nav .start-nuestra_tienda, a:nth-child(4):hover~.animation{
+	width: 160px;
+	left: 310px;
+	background-color: #9b59b6;
+}
+nav .start-iniciar_sesion, a:nth-child(5):hover~.animation{
+	width: 120px;
+	left: 470px;
+	background-color: #367e22;
+}
+/*cuerpo*/
+body{
+	font-size: 12px;
+	font-family: sans-serif;
+	background: #2c3e50;
+}
+span{
+	color: #2BD6B4;
+}        
+/*:::::Pie de Pagina*/
+.pie-pagina{
+    width: 100%;
+    background-color: #0a141d;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}

@@ -1,0 +1,201 @@
+body {
+  background-image: url('../imagenes/fondo1.jpg');
+}
+
+
+
+.titulo{
+    position: relative;
+    text-align: center;
+    color: white;
+} 
+
+.Centrarlo{
+    width:700px;
+    height:400px;
+    background-color:#D0D3D4;
+    position:relative;
+    left:400px;
+    float:left;
+}
+
+img{
+   width:120px;
+   width:120px;
+}
+.colorlistaprendas{
+    background:#D0D3D4;
+    width:700px;
+    height:1000px;
+}
+.BTN_guardar{
+    
+    position:relative;
+    left:600px;
+    float:left;
+    width:200px;
+    height:200px;
+
+}
+
+.cuadrado {
+    width:190px;
+    height:200px;
+    background-color:#aaa;
+    position:relative;
+    left:100px;
+    float:left;
+    
+ }
+ 
+ .rectangulo {
+     
+     width: 500px;
+     height:530px;
+     float:left;
+     position:relative;
+     left:30px;
+ 
+ }
+ 
+ .rectangulo1{
+     background-color:blue;
+     width: 600px;
+     height:300px;
+     float:left;
+     position:relative;
+     left:300px;
+ 
+ }
+ 
+ .Espacio{
+     position:relative;
+     float:left;
+     left:100px;
+ }
+ 
+ .alejamiento{
+     position:relative;
+     left:400px;
+     height:30px;
+ }
+ 
+ 
+ 
+ 
+ 
+     
+ 
+ .div1 {
+     margin: .40em 0;
+     height:20px;
+     
+ }
+ 
+ .imagenautor{
+     float:left
+ }
+ 
+ 
+ .AlineandoBiográfia{
+     position:relative;
+     left:50px;
+ }
+ 
+ .botonbiografiacentrar{
+     position:relative;
+     height:30px;
+     left:1250px;
+ }
+ 
+ .Alejamiento{
+     position:relative;
+     left:370px;
+ }
+ 
+ .pie_depagina{
+     background-color: #0a141d;
+     width:100%;
+     height:34%;
+     position: fixed;
+     bottom: 0;
+     
+ }
+ 
+ .pie_depagina .grupo_1{
+     width:100%;
+     max-width:1200px;
+     margin: auto;
+     display:grid ;/*3 columnas*/
+     grid-template-columns: repeat(3,1fr);
+     grid-gap:50px;
+     padding:42px 0px;
+ 
+ }
+ 
+ .pie_depagina .grupo_1 .box figure{
+     width:70%;
+     height:60%;
+     display:flex;
+     justify-content: center;
+     align-items:center;
+ 
+ }
+ 
+ 
+ .pie_depagina .grupo_1 .box figure img{
+    width:200px;
+ }
+ 
+ .pie_depagina .grupo_1 .box h2{
+     color: #fff;
+     margin-bottom: 25px;
+     font-size: 20px;
+ }
+ 
+ 
+ .pie_depagina .grupo_1 .box p{
+     color: #efefef;
+     margin-bottom: 10px;
+ 
+ 
+ }
+ 
+ .pie_depagina .grupo_1 .red_social a{
+     display:inline-block;
+     text-decoration: none;
+     width:45px;
+     height:45px;
+     line-height: 45px;
+     color:#fff;
+     margin-right: 10px;
+     background-color: #0d2033;
+     text-align:center;
+     transition: all 300ms ease;
+ }
+ 
+ 
+ .pie_depagina .grupo_1 .red_social a:hover{
+     color:aqua;
+ }
+ 
+ .pie_depagina .grupo_2{
+     background-color: #0a1a2a;
+     padding:15px 10px;
+     text-align:center;
+     color:#fff;
+ }
+ 
+ .pie_depagina .grupo_2 small{
+     font-size:15px;
+ }
+ 
+ @media screen and (max-width: 800px) {
+     .pie_depagina .grupo_1{
+         width:90%;
+         grid-template-columns: repeat(3,1fr);
+         grid-gap:30px;
+         padding:35px 0px;
+     
+     }
+ }
